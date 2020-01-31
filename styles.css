@@ -9,7 +9,7 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background:black;
 }
 /* Link Styles */
 
@@ -34,10 +34,13 @@ a:hover {
 .nav {
   display: flex;
   justify-content: space-around;
-  font-weight: 700;
+  font-weight: normal;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
+}
+.main-nav ul li.current-menu a{
+color: white;
 }
 
 .nav .name {
@@ -60,33 +63,39 @@ header {
   background: url('images/legobath.jpg') no-repeat center ;
   background-size: cover;
   overflow: hidden;
-  padding-top: 60px;
+  padding-top: 200px;
 }
 header {
   line-height: 1.5;
 }
 header .profile-image {
   margin-top: 50px;
+  margin-bottom: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
-  transition: all .5s;
+  border-radius: 40%;
+  border: 2px solid white;
+  transition: all .5s ;
 }
+
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform:scale3d(2.5, 1.2, 0.3) rotate(360deg) ;
 }
 .tag {
   background-color: #efefef;
   color: black;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 15px;
   display: table;
-  margin: 10px auto;
+  margin: 60px auto;
+  transition: all 2s;
+ 
 } 
+
+
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: #fff;
+  color: navy;
 }
 .card {
   margin: 30px;
@@ -99,12 +108,34 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+ background-color: rgb(61, 59, 59);
+ transition: all 0.5s;
+ color: whitesmoke;
 }
 
 ul.skills {
   padding: 0;
   text-align: center;
+}
+
+.journey-text {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 100%;
+  text-align: center;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+  
+}
+.journey-text:hover {
+ background-color: rgb(126, 102, 82);
+ transition: all 0.5s;
+ color: whitesmoke;
+ border-color: rgb(65, 65, 88);
+ max-width: 50%;
+ 
 }
 
 .skills li {
@@ -166,15 +197,27 @@ a.social:hover {
 .clearfix {
   clear: both;
 }
-.experience-header {
+.journey-header {
   text-align: center;
-  background: url('images/mouth.svg') ;
+  background: url('images/') ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
 
 }
-.experience-header{
+.journey-header{
+line-height: 1.5;
+}
+
+.hobbies-header {
+  text-align: center;
+  background: url('images/') ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+
+}
+.hobbies-header{
 line-height: 1.5;
 }
 
@@ -193,9 +236,7 @@ line-height: 1.5;
   header {
     min-height: 470px;
   }
-  .experience-header{
-    min-height: 470px;
-  }
+  
   .nav {
     max-width: 1200px;
     padding: 0 30px;
@@ -216,5 +257,64 @@ line-height: 1.5;
     margin: 40px auto;
   }
 
+    .bottom_card{
+      display: block;
+      text-align: center;
+    }
+
+    .box {
+      display: inline-block;
+      max-width: 100%;
+
+    }
+
 }
 
+  .bottom_card {
+    display: block;
+   max-width: 1400px;
+   overflow: hidden;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 150px;
+    padding-top: 50px;
+  }
+.photo_title {
+  color: #efefef;
+
+}
+
+.bottom-card {
+  display: block;
+  text-align: center;
+
+}
+
+.box {
+  width: 25%;
+  border: white solid 5px;
+display: inline-block;
+margin-left: -4px;
+}
+
+.box:hover {
+transform: scale(1.4);
+transition: 0.9s;
+
+}
+
+.box img {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+h1{
+color: Silver;
+text-shadow: #fff;
+text-decoration-line: underline;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
