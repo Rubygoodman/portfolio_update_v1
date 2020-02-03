@@ -81,6 +81,19 @@ header .profile-image {
 header .profile-image:hover {
   transform:scale3d(2.5, 1.2, 0.3) rotate(360deg) ;
 }
+header .interests-image {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 250px;
+  height: 300px;
+  border-radius: 40%;
+  border: 2px solid white;
+  transition: all .5s ;
+}
+
+header .interests-image:hover {
+  transform:scale3d(2.5, 1.2, 0.3) rotate(360deg) ;
+}
 .tag {
   background-color: #efefef;
   color: black;
@@ -118,7 +131,13 @@ ul.skills {
   text-align: center;
 }
 
+.journey-info{
+display: block;
+
+}
+
 .journey-text {
+  display: inline-block;
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 100%;
@@ -134,21 +153,19 @@ ul.skills {
  transition: all 0.5s;
  color: whitesmoke;
  border-color: rgb(65, 65, 88);
- max-width: 50%;
- 
 }
 
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #f14ce4;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #9ee62a;
 }
 
 footer {
@@ -209,7 +226,7 @@ a.social:hover {
 line-height: 1.5;
 }
 
-.hobbies-header {
+.interests-header {
   text-align: center;
   background: url('images/') ;
   background-size: cover;
@@ -217,7 +234,7 @@ line-height: 1.5;
   padding-top: 60px;
 
 }
-.hobbies-header{
+.interests-header{
 line-height: 1.5;
 }
 
@@ -311,7 +328,6 @@ transition: 0.9s;
 
 h1{
 color: Silver;
-text-shadow: #fff;
 text-decoration-line: underline;
 }
 
